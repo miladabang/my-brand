@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Галерея - ODDY BRAND</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .slider {
+      width: 90%;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 15s infinite;
+    }
+    .slides img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      33% { transform: translateX(-100%); }
+      66% { transform: translateX(-200%); }
+      100% { transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>ODDY BRAND</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="gallery.html">Галерея</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="slider">
+      <div class="slides">
+        <img src="images/4.jpg" alt="ODDY Look 1">
+        <img src="images/5.jpg" alt="ODDY Look 2">
+        <img src="images/6.jpg" alt="ODDY Look 3">
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ODDY BRAND. Всі права захищено.</p>
+  </footer>
+</body>
+</html>
